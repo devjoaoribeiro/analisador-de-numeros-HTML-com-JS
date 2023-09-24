@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+body {
+    background: black;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
+}
+
+/* Estilização da barra de rolagem no Chrome, Edge e Safari */
+select#flista::-webkit-scrollbar {
+    width: 10px;
+}
+
+select#flista::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, gray, white);
+}
+
+select#flista::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 6px;
+}
+
+/* Estilização da barra de rolagem no Firefox */
+select#flista {
+    scrollbar-width: thin;
+    scrollbar-color: grey grey;
+    width: 150px;
+    margin: 10px auto;
+    display: block;
+    background-color: black;
+    color: white;
+}
+
+/* Estilização da barra de rolagem no Edge (baseado no Chromium) */
+@supports (-ms-ime-align:auto) {
+    select#flista {
+        scrollbar-width: thin;
+        scrollbar-color:grey grey;
+    }
+}
+
+p#finalizar {
+    text-align: center;
+    margin: 0px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

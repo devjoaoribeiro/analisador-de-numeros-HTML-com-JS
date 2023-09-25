@@ -40,7 +40,7 @@ select#flista {
     scrollbar-width: thin;
     scrollbar-color: grey grey;
     width: 150px;
-    height: 100px;
+    size: 6;
     margin: 10px auto;
     display: block;
     background-color: black;
